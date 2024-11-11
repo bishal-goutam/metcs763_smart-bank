@@ -1,6 +1,6 @@
 # Smart Bank
 
-Smart Bank is a web-based banking application that allowsbank account management features for Bank Employees and External Customers like internal and external transfers, account management, and transaction tracking. The application is built with a Spring Boot backend that hosts RESTfull APIs and a React frontend, providing a secure and responsive user experience.
+Smart Bank is a web-based banking application that allows bank account management features for Bank Employees and External Customers like internal and external transfers, account management, and transaction tracking. The application is built with a Spring Boot backend that hosts RESTfull APIs and a React frontend, providing a secure and responsive user experience.
 
 ## Table of Contents
 1. [Features](#features)
@@ -14,11 +14,18 @@ Smart Bank is a web-based banking application that allowsbank account management
 
 ## Features
 
+**Access Managment**
+- **Role-Based Access**: Access control for different user roles (e.g., Bank Manager, User), limiting permissions based on role.
+- **Real-Time Updates**: Real-time updates to balances and transaction records on the user interface.
+
+**Internal Users**
+- **Customer Management**: Add, Modify and Remove Customers.
+- **Account Management**: View and manage all Customers bank accounts, including account balances.
+  
+**Externak Users**
 - **Account Management**: View and manage bank accounts, including account balances and transaction history.
 - **Internal and External Transfers**: Easily transfer funds between accounts within the bank or to external accounts with verification and logging.
 - **Transaction History**: Track all past transactions with details such as date, amount, description, and type (credit/debit).
-- **Role-Based Access**: Access control for different user roles (e.g., Bank Manager, User), limiting permissions based on role.
-- **Real-Time Updates**: Real-time updates to balances and transaction records on the user interface.
 
 ## Tech Stack
 
@@ -31,8 +38,8 @@ Smart Bank is a web-based banking application that allowsbank account management
 ## Architecture
 
 The application follows a **client-server architecture**:
-- **Backend**: The backend service, implemented in Spring Boot, handles business logic, database access, and REST API endpoints.
-- **Frontend**: The frontend React app provides a responsive user interface for interacting with the backend.
+- **Backend**: The backend provide RESTfull API services, implemented in Spring Boot that handles business logic, database access, and REST API endpoints.
+- **Frontend**: The frontend React app provides a responsive user interface to allow internal and external users perform critical business processes.
 
 ![Architecture Diagram](path/to/architecture-diagram.png) 
 
@@ -41,7 +48,7 @@ The application follows a **client-server architecture**:
 ### Prerequisites
 - **Java 11+**
 - **Node.js & npm**
-- **MySQL** (Create a database named `smart_bank` and configure the connection in `application.properties`)
+- **MySQL** (Create a database named `smartbank_db` and configure the connection in `application.properties`)
 
 ### Step-by-Step Setup
 
@@ -49,3 +56,6 @@ The application follows a **client-server architecture**:
    ```bash
    git clone https://github.com/your-username/smart-bank.git
    cd smart-bank
+
+2. **Run Frontent and Backend**
+   Run the Frontend and Backend separately.  
