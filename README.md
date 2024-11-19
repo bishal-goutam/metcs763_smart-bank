@@ -78,6 +78,7 @@ The application follows a **client-server architecture**:
 
    ```bash
    cd src\main\resources\static\smart-banking-ui
+   npm start
    ```
 
    ![Run Frontend](Documents/RunFrontend.jpg)
