@@ -58,4 +58,21 @@ The application follows a **client-server architecture**:
    cd smart-bank
 
 2. **Run Frontent and Backend**
-   Run the Frontend and Backend separately.  
+   Run the Frontend and Backend separately.
+
+
+   ![Start MySQL Database](Documents/StartMySQLDatabase.jpg)
+
+
+
+   ![Run Backend](Documents/RunBackend.jpg)
+
+
+
+   ![Backend Started](Documents/BackendStarted.jpg)
+
+
+   ![Run Frontend](Documents/RunFrontend.jpg)
+
+
+   ![Frontend Started](Documents/FrontendStarted.jpg) 
