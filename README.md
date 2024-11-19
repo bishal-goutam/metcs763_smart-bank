@@ -89,3 +89,8 @@ The application follows a **client-server architecture**:
 | Bishal Goutam| bishalg@bu.edu         | Developer     |
 
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
