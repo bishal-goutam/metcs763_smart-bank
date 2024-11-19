@@ -78,6 +78,6 @@ The application follows a **client-server architecture**:
 
    ![Run Frontend](Documents/RunFrontend.jpg)
 
-   e. When the program runs fine.
+   e. The program will run as shown below.
 
    ![Frontend Started](Documents/FrontendStarted.jpg) 
