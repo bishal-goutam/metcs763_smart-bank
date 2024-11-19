@@ -60,19 +60,24 @@ The application follows a **client-server architecture**:
 2. **Run Frontent and Backend**
    Run the Frontend and Backend separately.
 
+   a. First start the MySQL Database. In this case DB is running on the same machine.
 
    ![Start MySQL Database](Documents/StartMySQLDatabase.jpg)
 
 
-
+   b. Next start the Backend by running the main function in SmartBankApplication class in SmartBankApplication.java file.
+   
    ![Run Backend](Documents/RunBackend.jpg)
 
-
+   c. If there are no errors the backend will start.
 
    ![Backend Started](Documents/BackendStarted.jpg)
 
 
+   d. Open a new Terminal. Change the directory to src\main\resources\static\smart-banking-ui. Perform rebuild using **"npm run build"**. Once the build is successfuly completed. Run "npm start".
+
    ![Run Frontend](Documents/RunFrontend.jpg)
 
+   e. When the program runs fine.
 
    ![Frontend Started](Documents/FrontendStarted.jpg) 
