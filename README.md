@@ -76,6 +76,10 @@ The application follows a **client-server architecture**:
 
    d. Open a new Terminal. Change the directory to src\main\resources\static\smart-banking-ui. Perform rebuild using **"npm run build"**. Once the build is successfuly completed. Run "npm start".
 
+   ```bash
+   cd src\main\resources\static\smart-banking-ui
+   ```
+
    ![Run Frontend](Documents/RunFrontend.jpg)
 
    e. The program will run as shown below.
