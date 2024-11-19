@@ -80,4 +80,12 @@ The application follows a **client-server architecture**:
 
    e. The program will run as shown below.
 
-   ![Frontend Started](Documents/FrontendStarted.jpg) 
+   ![Frontend Started](Documents/FrontendStarted.jpg)
+
+## Contributing
+
+| Name         | Email                  | Role          |
+|--------------|------------------------|---------------|
+| Bishal Goutam| bishalg@bu.edu         | Developer     |
+
+
