@@ -41,8 +41,7 @@ The application follows a **client-server architecture**:
 - **Backend**: The backend provide RESTfull API services, implemented in Spring Boot that handles business logic, database access, and REST API endpoints.
 - **Frontend**: The frontend React app provides a responsive user interface to allow internal and external users perform critical business processes.
 
-![Architecture Diagram](![image](https://github.com/user-attachments/assets/552143e6-e600-4e55-8625-e7810cd9cc1b)
-) 
+![Architecture Diagram](![image](Documents/SmartBankSolutionArchitecture.jpg)) 
 
 ## Installation
 
