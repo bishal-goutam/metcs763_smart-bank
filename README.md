@@ -89,7 +89,7 @@ The application follows a **client-server architecture**:
 
 
 3. **Create Database Tables if Spring doesn't create**
-    ![Database Table Details](Documents/FrontendStarted.jpg)
+    ![Database Table Details](Documents/database_tables.jpg)
 
    ```sql
     create database smartbank_db;
