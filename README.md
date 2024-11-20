@@ -87,6 +87,34 @@ The application follows a **client-server architecture**:
 
    ![Frontend Started](Documents/FrontendStarted.jpg)
 
+
+3. **Create Database Tables if Spring doesn't create**
+    ![Database Table Details](Documents/FrontendStarted.jpg)
+
+   ```sql
+    create database smartbank_db;
+    use smartbank_db;
+    CREATE TABLE roles (
+      id BIGINT AUTO_INCREMENT PRIMARY KEY,
+      role VARCHAR(255)
+    );
+    INSERT INTO roles (role) VALUES
+    ("BankManager"),
+    ("User");
+
+    CREATE TABLE transactions (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    account_id BIGINT NOT NULL,
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    description VARCHAR(255),
+    amount DECIMAL(10, 2),
+    transaction_type ENUM('debit', 'credit'),
+    balance_before DECIMAL(10, 2),
+    balance_after DECIMAL(10, 2),
+    FOREIGN KEY (account_id) REFERENCES customeraccount(id)
+    );
+   ```
+
 ## Contributing
 
 | Name         | Email                  | Role          |
