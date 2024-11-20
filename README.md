@@ -62,7 +62,7 @@ The application follows a **client-server architecture**:
 
 2. **Create Database Tables**
    - **Install MySQL Database.**
-   - **Launch MySQL Launch.**
+   - **Launch MySQL Workbench.**
    - **Run the queries in the attached file to create required tables and load sample data.**
    - **Start the Database.**
    - **Update the application.properties files with database connection details. Path - src/main/resources/application.properties**
