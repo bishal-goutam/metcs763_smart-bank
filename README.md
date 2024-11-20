@@ -27,6 +27,9 @@ Smart Bank is a web-based banking application that allows bank account managemen
 - **Internal and External Transfers**: Easily transfer funds between accounts within the bank or to external accounts with verification and logging.
 - **Transaction History**: Track all past transactions with details such as date, amount, description, and type (credit/debit).
 
+![Smart Bank Functional Flows](Documents/Functional Flows.docx)
+
+
 ## Tech Stack
 
 - **Backend**: Java, Spring Boot
