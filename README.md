@@ -60,7 +60,24 @@ The application follows a **client-server architecture**:
    git clone https://github.com/your-username/smart-bank.git
    cd smart-bank
 
-2. **Run Frontent and Backend**
+2. **Create Database Tables**
+   - **Install MySQL Database.**
+   - **Launch MySQL Launch.**
+   - **Run the queries in the attached file to create required tables and load sample data.**
+   - **Start the Database.**
+   - **Update the application.properties files with database connection details. Path - src/main/resources/application.properties**
+    
+    ![Database Table Details](Documents/smart-bank-sql-queries.sql)
+
+   ```sql
+    create database smartbank_db;
+    use smartbank_db;
+  
+   ```
+
+    ![Database Table Details](Documents/database_tables.jpg)
+
+4. **Run Frontent and Backend**
    Run the Frontend and Backend separately.
 
    a. First start the MySQL Database. In this case DB is running on the same machine.
@@ -91,32 +108,9 @@ The application follows a **client-server architecture**:
    ![Frontend Started](Documents/FrontendStarted.jpg)
 
 
-3. **Create Database Tables if Spring doesn't create**
-    ![Database Table Details](Documents/database_tables.jpg)
 
-   ```sql
-    create database smartbank_db;
-    use smartbank_db;
-    CREATE TABLE roles (
-      id BIGINT AUTO_INCREMENT PRIMARY KEY,
-      role VARCHAR(255)
-    );
-    INSERT INTO roles (role) VALUES
-    ("BankManager"),
-    ("User");
 
-    CREATE TABLE transactions (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    account_id BIGINT NOT NULL,
-    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    description VARCHAR(255),
-    amount DECIMAL(10, 2),
-    transaction_type ENUM('debit', 'credit'),
-    balance_before DECIMAL(10, 2),
-    balance_after DECIMAL(10, 2),
-    FOREIGN KEY (account_id) REFERENCES customeraccount(id)
-    );
-   ```
+
 
 ## Contributing
 
