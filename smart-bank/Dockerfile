@@ -1,7 +1,6 @@
-FROM ubuntu:latest
+
 LABEL authors="bisha"
 
-ENTRYPOINT ["top", "-b"]
 
 # Use a Java runtime base image
 FROM openjdk:17-jdk-slim
