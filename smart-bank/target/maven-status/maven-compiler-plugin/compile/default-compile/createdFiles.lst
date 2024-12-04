@@ -2,6 +2,7 @@ com\banking\smart_bank\entity\User.class
 com\banking\smart_bank\controller\TestController.class
 com\banking\smart_bank\controller\TransferController.class
 com\banking\smart_bank\service\TransferService.class
+com\banking\smart_bank\utility\PasswordEncodingMigration.class
 com\banking\smart_bank\service\TransactionService.class
 com\banking\smart_bank\dto\CustomerAccountDto.class
 com\banking\smart_bank\service\AuthService.class
@@ -21,6 +22,7 @@ com\banking\smart_bank\service\CustomerAccountService.class
 com\banking\smart_bank\entity\Role.class
 com\banking\smart_bank\controller\AuthController.class
 com\banking\smart_bank\dto\LoginRequest.class
+com\banking\smart_bank\service\UserService.class
 com\banking\smart_bank\config\GlobalCorsConfig.class
 com\banking\smart_bank\SmartBankApplication$1.class
 com\banking\smart_bank\service\impl\TransactionServiceImpl.class
