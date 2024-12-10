@@ -14,15 +14,28 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
+// Added with feature/security-passwordencryption
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+//************************************************************************
+
 @CrossOrigin(origins = "http://localhost:3000")
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
+    //@Bean
+    //public PasswordEncoder passwordEncoder() {
+    //    return NoOpPasswordEncoder.getInstance();  // Use NoOpPasswordEncoder for plain-text passwords
+    //}
+
+    // *******************************************************
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();  // Use NoOpPasswordEncoder for plain-text passwords
+        return new BCryptPasswordEncoder(); // Use BCryptPasswordEncoder for secure password hashing
     }
+    // *******************************************************
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
