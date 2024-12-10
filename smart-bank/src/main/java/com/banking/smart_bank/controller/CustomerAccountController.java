@@ -8,14 +8,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 @RestController
 @RequestMapping("/api/accounts")
 public class CustomerAccountController {
 
-    private CustomerAccountService customerAccountService;
+    private final CustomerAccountService customerAccountService;
 
+    @Autowired
     public CustomerAccountController(CustomerAccountService accountService) {
         this.customerAccountService = accountService;
     }

@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -35,6 +36,10 @@ public class Transaction {
     private double balanceBefore;
     private double balanceAfter;
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification = "JPA Entity.Exposing references is required by design."
+    )
     public Transaction(CustomerAccount account, LocalDateTime transactionDate, String description, double amount, TransactionType transactionType, double balanceBefore, double balanceAfter) {
         this.account = account;
         this.transactionDate = transactionDate;
